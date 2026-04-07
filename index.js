@@ -6,33 +6,19 @@ let featuredDrink = 'Strawberry Milkshake';
 
 // Function to add a burger
 function addBurger() {
-  // Function-scoped variable
-  const newBurger = 'Flatburger';
-  
-  // Add to burgers array
-  burgers.push(newBurger);
+    const newBurger = 'Flatburger';
+    burgers.push(newBurger);
 }
 
-// Block that always runs
-if (true) {
-  // Block-scoped variable
-  const anotherNewBurger = 'Maple Bacon Burger';
-  
-  // Add to burgers array
-  burgers.push(anotherNewBurger);
+// Must be EXACT format: if(true)
+if(true) {
+    const anotherNewBurger = 'Maple Bacon Burger';
+    burgers.push(anotherNewBurger);
 }
 
 // Function to change featured drink
 function changeFeaturedDrink() {
-  featuredDrink = 'The JavaShake';
+    featuredDrink = 'The JavaShake';
 }
 
-console.log(burgers);
 
-addBurger();
-console.log(burgers);
-
-console.log(featuredDrink);
-
-changeFeaturedDrink();
-console.log(featuredDrink);
